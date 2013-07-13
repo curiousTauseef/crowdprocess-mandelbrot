@@ -7,6 +7,9 @@
  * @param scale radius of the image
  * @param max   maximum iterations
  * @returns an array of jobs, to be turned into the input JSON
+ *
+ * @example 16-job seahorse
+ * tasker(1600, 4, -0.743030, 0.126433, 0.016110 / 2, 100000);
  */
 function tasker(size, div, x, y, scale, max) {
     var tasks = [];
@@ -35,6 +38,9 @@ function tasker(size, div, x, y, scale, max) {
  * already the proper size.
  * @param s    the size of a single job
  * @param band the number of bands (modulus) in the output image
+ *
+ * @example seahorse results
+ * draw(canvas, results, 400, 100000, 16);
  */
 function draw(canvas, results, s, max, band) {
     max = max || 64;
